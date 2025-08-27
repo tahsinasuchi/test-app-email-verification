@@ -109,6 +109,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/member/{id}/edit', [AdminMemberController::class, 'edit'])->name('admin.members.edit');
         Route::put('/member/{id}/edit', [AdminMemberController::class, 'update'])->name('admin.members.update');
         Route::get('/member/export/csv', [AdminMemberController::class, 'exportCsv'])->name('admin.members.csv');
+        Route::delete('/member/{id}', [AdminMemberController::class, 'destroy'])->name('admin.members.destroy');
 
         // Customers CRUD for admins
         Route::get('/customer', [CustomerAdminController::class, 'index'])->name('admin.customers.index');
@@ -117,5 +118,6 @@ Route::prefix('admin')->group(function () {
         Route::get('/customer/{id}/edit', [CustomerAdminController::class, 'edit'])->name('admin.customers.edit');
         Route::put('/customer/{id}/edit', [CustomerAdminController::class, 'update'])->name('admin.customers.update');
         Route::get('/customer/export/csv', [CustomerAdminController::class, 'exportCsv'])->name('admin.customers.csv');
+        Route::delete('/customers/{id}', [CustomerAdminController::class, 'destroy'])->name('admin.customers.destroy');
     });
 });

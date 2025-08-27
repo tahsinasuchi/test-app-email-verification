@@ -106,4 +106,13 @@ class AdminMemberController extends Controller
 
         return $response;
     }
+
+    public function destroy($id)
+    {
+        $customer = Admin::findOrFail($id);
+        $customer->delete();
+
+        return redirect()->route('admin.members.index')
+                        ->with('status', __('Admin deleted successfully.'));
+    }
 }

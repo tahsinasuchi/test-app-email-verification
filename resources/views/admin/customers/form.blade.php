@@ -55,7 +55,7 @@
                     {{ $customer->id ? '' : 'required' }}>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label for="password_confirmation"  class={{ $customer->id ? '' : 'required' }}>{{ __('password_confirm') }}</label>
                 <input 
                     type="password" 
@@ -65,12 +65,25 @@
                     {{ $customer->id ? '' : 'required' }}>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-sm">
+            <button type="submit" class="btn btn-primary btn-sm  mb-2">
                 {{ $customer->id ? __('update') : __('create') }}
             </button>
-            <a href="{{ route('admin.customers.index') }}" class="btn btn-secondary btn-sm">
+            
+            <a href="{{ route('admin.customers.index') }}" class="btn btn-secondary btn-sm  mb-2">
                 {{ __('back_to_list') }}
             </a>
         </form>
+        @if($customer->id)
+                <form action="{{ route('admin.customers.destroy', $customer->id) }}" 
+                        method="POST" 
+                        class="d-inline"
+                        onsubmit="return confirm('{{ __('Are you sure you want to delete this customer?') }}')">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger btn-sm  mb-2">
+                        {{ __('Delete') }}
+                    </button>
+                </form>
+            @endif
     </div>
 </x-layout>

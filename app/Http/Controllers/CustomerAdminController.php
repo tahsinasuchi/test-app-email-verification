@@ -105,4 +105,12 @@ class CustomerAdminController extends Controller
 
         return $response;
     }
+    public function destroy($id)
+    {
+        $customer = Customer::findOrFail($id);
+        $customer->delete();
+
+        return redirect()->route('admin.customers.index')
+                        ->with('status', __('Customer deleted successfully.'));
+    }
 }
