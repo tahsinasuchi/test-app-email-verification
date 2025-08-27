@@ -97,3 +97,6 @@ This is a drop-in feature pack implementing:
 
 ## Customer List
 ![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.36.33.png)
+
+## Email verification
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification/blob/main/public/Screenshot%202025-08-27%20at%2020.55.47.png)
