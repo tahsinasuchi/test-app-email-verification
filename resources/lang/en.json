@@ -11,7 +11,7 @@
     "english": "English",
     "flash_success": "Success",
     "flash_error": "Error",
-    "member_login": "Member Login",
+    "member_login": "Admin Login",
     "remember_me": "Remember me",
     "login": "Login",
     "create_account": "Create account",
@@ -50,8 +50,8 @@
     "verified_status": "Verified",
     "pending_status": "Pending",
     "no_members": "No members found",
-    "member_form": "会員フォーム",
-    "member_new": "会員 新規登録",
-    "member_edit": "会員 編集",
-    "password_confirm": "パスワード確認"
+    "member_form": "Admin form",
+    "member_new": "New Admin",
+    "member_edit": "Admin Edit",
+    "password_confirm": "Password Confirm"
 }

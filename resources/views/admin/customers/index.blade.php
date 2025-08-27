@@ -1,6 +1,6 @@
-<x-layout :title="__('members')">
+<x-layout :title="__('customer_list')">
     <div class="container mt-4">
-        <h1 class="h4 mb-3">{{ __('members') }}</h1>
+        <h1 class="h4 mb-3">{{ __('customer_list') }}</h1>
 
         <form method="get" class="form-inline mb-3">
             <input 

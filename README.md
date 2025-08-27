@@ -91,3 +91,9 @@ This is a drop-in feature pack implementing:
 
 ## Login screen EN
 ![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.06.png)
+
+## Admin List
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.20.png)
+
+## Customer List
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.20.png)
