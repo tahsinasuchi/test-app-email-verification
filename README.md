@@ -28,6 +28,13 @@ This is a drop-in feature pack implementing:
     MAIL_PASSWORD=
     MAIL_ENCRYPTION=
     MAIL_FROM_ADDRESS=
+
+    DB_CONNECTION=mysql
+    DB_HOST=
+    DB_PORT=
+    DB_DATABASE=
+    DB_USERNAME=
+    DB_PASSWORD=
    # or use smtp details
    ```
 
