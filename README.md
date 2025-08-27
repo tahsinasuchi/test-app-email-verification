@@ -84,3 +84,10 @@ This is a drop-in feature pack implementing:
 ## Customization
 - Add fields to migrations and update the `$fillable` properties and form views accordingly.
 - Replace simple layouts with your CSS framework of choice.
+
+
+## Login Screen JP
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.00.png)
+
+## Login screen EN
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.06.png)
