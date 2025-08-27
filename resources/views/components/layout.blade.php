@@ -6,6 +6,13 @@
     <title>{{ $title ?? __('app_name') }}</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add red asterisk for required labels */
+        label.required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
 </head>
 <body>
     {{-- ナビゲーションメニュー --}}

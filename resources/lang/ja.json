@@ -43,7 +43,7 @@
     "admin_form": "管理者フォーム",
     "admin_edit": "管理者編集",
     "admin_new": "新規管理者",
-    "password_leave_blank": "（空欄の場合は既存のパスワードを維持します）",
+    "password_leave_blank": "パスワード（空欄の場合は既存のパスワードを維持します）",
     "update": "更新",
     "create": "作成",
     "back_to_list": "一覧に戻る",

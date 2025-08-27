@@ -6,7 +6,7 @@
             @csrf
 
             <div class="form-group">
-                <label for="name">{{ __('name') }}</label>
+                <label for="name" class="required">{{ __('name') }}</label>
                 <input 
                     type="text" 
                     name="name" 
@@ -17,7 +17,7 @@
             </div>
 
             <div class="form-group">
-                <label for="email">{{ __('email') }}</label>
+                <label for="email" class="required">{{ __('email') }}</label>
                 <input 
                     type="email" 
                     name="email" 
@@ -28,7 +28,7 @@
             </div>
 
             <div class="form-group">
-                <label for="login_id">{{ __('login_id') }}</label>
+                <label for="login_id" class="required">{{ __('login_id') }}</label>
                 <input 
                     type="text" 
                     name="login_id" 
@@ -39,7 +39,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password">{{ __('password') }}</label>
+                <label for="password" class="required">{{ __('password') }}</label>
                 <input 
                     type="password" 
                     name="password" 
@@ -49,7 +49,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password_confirmation">{{ __('confirm_password') }}</label>
+                <label for="password_confirmation" class="required">{{ __('confirm_password') }}</label>
                 <input 
                     type="password" 
                     name="password_confirmation" 

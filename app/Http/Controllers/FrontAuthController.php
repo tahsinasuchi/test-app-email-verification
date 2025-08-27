@@ -25,7 +25,7 @@ class FrontAuthController extends Controller
             $user = Auth::guard('web')->user();
             if (! $user->hasVerifiedEmail()) {
                 Auth::guard('web')->logout();
-                return back()->withErrors(['email' => 'Email not verified.']);
+                return back()->withErrors(['email' => '認証待ち']);
             }
             $request->session()->regenerate();
             return redirect()->route('front.mypage.edit');

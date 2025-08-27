@@ -64,20 +64,45 @@ class CustomerAdminController extends Controller
         return redirect()->route('admin.customers.index')->with('status','Member updated');
     }
 
-    public function exportCsv()
+    public function exportCsv(Request $request)
     {
-        $response = new StreamedResponse(function() {
+        $q = Customer::query();
+        // 🔍 apply search if exists
+        if ($s = $request->get('s')) {
+            $q->where(function($qq) use ($s) {
+                $qq->where('name', 'like', "%$s%")
+                ->orWhere('email', 'like', "%$s%")
+                ->orWhere('login_id', 'like', "%$s%");
+            });
+        }
+
+        // 📤 streamed CSV response
+        $response = new StreamedResponse(function() use ($q) {
             $handle = fopen('php://output', 'w');
+
+            // header row
             fputcsv($handle, ['id','name','email','login_id','email_verified_at','created_at']);
-            Customer::chunk(200, function($rows) use ($handle) {
+
+            // chunked fetch + write
+            $q->orderBy('id', 'desc')->chunk(200, function($rows) use ($handle) {
                 foreach ($rows as $r) {
-                    fputcsv($handle, [$r->id,$r->name,$r->email,$r->login_id,$r->email_verified_at,$r->created_at]);
+                    fputcsv($handle, [
+                        $r->id,
+                        $r->name,
+                        $r->email,
+                        $r->login_id,
+                        $r->email_verified_at,
+                        $r->created_at,
+                    ]);
                 }
             });
+
             fclose($handle);
         });
+
         $response->headers->set('Content-Type', 'text/csv');
         $response->headers->set('Content-Disposition', 'attachment; filename="customers.csv"');
+
         return $response;
     }
 }

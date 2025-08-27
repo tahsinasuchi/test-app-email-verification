@@ -16,7 +16,9 @@
         <!-- Actions -->
         <p class="mb-3">
             <a href="{{ route('admin.members.create') }}" class="btn btn-success btn-sm">+ {{ __('new') }}</a>
-            <a href="{{ route('admin.members.csv') }}" class="btn btn-outline-secondary btn-sm">{{ __('export_csv') }}</a>
+            <a href="{{ route('admin.members.csv', request()->query()) }}" class="btn btn-secondary btn-sm">
+                {{ __('export_csv') }}
+            </a>
         </p>
 
         <!-- Members Table -->

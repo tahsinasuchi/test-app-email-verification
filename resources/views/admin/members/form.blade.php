@@ -11,7 +11,7 @@
             @endif
 
             <div class="form-group">
-                <label for="name">{{ __('name') }}</label>
+                <label for="name"  class="required">{{ __('name') }}</label>
                 <input 
                     type="text" 
                     id="name" 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="form-group">
-                <label for="email">{{ __('email') }}</label>
+                <label for="email"  class="required">{{ __('email') }}</label>
                 <input 
                     type="email" 
                     id="email" 
@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-group">
-                <label for="login_id">{{ __('login_id') }}</label>
+                <label for="login_id"  class="required">{{ __('login_id') }}</label>
                 <input 
                     type="text" 
                     id="login_id" 
@@ -44,7 +44,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password">
+                <label for="password"  class={{ $admin->id ? '' : 'required' }}>
                     {{ __('password') }}
                     @if($admin->id)
                         {{ __('password_leave_blank') }}
@@ -59,7 +59,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password_confirmation">{{ __('confirm_password') }}</label>
+                <label for="password_confirmation"  class={{ $admin->id ? '' : 'required' }}>{{ __('confirm_password') }}</label>
                 <input 
                     type="password" 
                     id="password_confirmation" 

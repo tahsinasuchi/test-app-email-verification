@@ -43,7 +43,7 @@ class AdminAuthController extends Controller
             $admin = Auth::guard('admin')->user();
             if (! $admin->hasVerifiedEmail()) {
                 Auth::guard('admin')->logout();
-                return back()->withErrors(['email' => 'Email not verified.']);
+                return back()->withErrors(['email' => '認証待ち']);
             }
             $request->session()->regenerate();
             return redirect()->route('admin.members.index');

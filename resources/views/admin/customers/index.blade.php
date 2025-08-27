@@ -14,7 +14,9 @@
 
         <p>
             <a href="{{ route('admin.customers.create') }}" class="btn btn-success btn-sm">{{ __('new') }}</a>
-            <a href="{{ route('admin.customers.csv') }}" class="btn btn-secondary btn-sm">{{ __('export_csv') }}</a>
+            <a href="{{ route('admin.customers.csv', request()->query()) }}" class="btn btn-secondary btn-sm">
+                {{ __('export_csv') }}
+            </a>
         </p>
 
         <table class="table table-bordered table-sm">
