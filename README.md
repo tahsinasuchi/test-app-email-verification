@@ -23,7 +23,7 @@ This is a drop-in feature pack implementing:
    ```env
     MAIL_MAILER=
     MAIL_HOST=
-    MAIL_PORT=2525
+    MAIL_PORT=
     MAIL_USERNAME=
     MAIL_PASSWORD=
     MAIL_ENCRYPTION=
