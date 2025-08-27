@@ -96,4 +96,4 @@ This is a drop-in feature pack implementing:
 ![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.20.png)
 
 ## Customer List
-![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.20.20.png)
+![alt text](https://github.com/tahsinasuchi/test-app-email-verification-/blob/main/public/Screenshot%202025-08-27%20at%2019.31.37.png)
