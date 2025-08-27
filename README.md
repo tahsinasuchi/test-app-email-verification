@@ -14,12 +14,7 @@ This is a drop-in feature pack implementing:
 
 1. Clone this repo https://github.com/tahsinasuchi/test-app-email-verification-.git
 
-2. Run migrations:
-   ```bash
-   php artisan migrate
-   ```
-
-3. Configure mail (for email verification) in `.env`:
+2. Configure mail (for email verification) in `.env`:
    ```env
     MAIL_MAILER=
     MAIL_HOST=
@@ -36,6 +31,11 @@ This is a drop-in feature pack implementing:
     DB_USERNAME=
     DB_PASSWORD=
    # or use smtp details
+   ```
+
+3. Run migrations:
+   ```bash
+   php artisan migrate
    ```
 
 4. Serve:
