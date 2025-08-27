@@ -1,7 +1,7 @@
 <x-layout :title="__('member_form')">
     <div class="container mt-4">
         <h1 class="h4 mb-3">
-            {{ $customer->id ? __('member_edit') : __('member_new') }}
+            {{ $customer->id ? __('customer_edit') : __('member_new') }}
         </h1>
 
         <form method="post" action="{{ $customer->id ? route('admin.customers.update',$customer->id) : route('admin.customers.store') }}">
