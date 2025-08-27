@@ -42,6 +42,10 @@ This is a drop-in feature pack implementing:
    ```bash
    php artisan serve
    ```
+5. Finally visit:
+   ```bash
+   http://127.0.0.1:8000/login
+   ```
 
 ## Notes
 
