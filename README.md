@@ -12,7 +12,7 @@ This is a drop-in feature pack implementing:
 
 ## Install
 
-1. Clone this repo https://github.com/tahsinasuchi/test-app-email-verification-.git
+1. Clone this repo https://github.com/tahsinasuchi/test-app-email-verification.git
 
 2. composer install
 
