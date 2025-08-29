@@ -14,7 +14,11 @@ This is a drop-in feature pack implementing:
 
 1. Clone this repo https://github.com/tahsinasuchi/test-app-email-verification-.git
 
-2. Configure mail (for email verification) in `.env`:
+2. composer install
+
+3. php artisan key:generate
+
+4. Configure mail (for email verification) in `.env`:
    ```env
     MAIL_MAILER=
     MAIL_HOST=
@@ -33,16 +37,16 @@ This is a drop-in feature pack implementing:
    # or use smtp details
    ```
 
-3. Run migrations:
+5. Run migrations:
    ```bash
    php artisan migrate
    ```
 
-4. Serve:
+6. Serve:
    ```bash
    php artisan serve
    ```
-5. Finally visit:
+7. Finally visit:
    ```bash
    http://127.0.0.1:8000/login
    ```
